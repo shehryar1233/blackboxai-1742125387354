@@ -1,0 +1,112 @@
+# Dependencies
+/node_modules
+/vendor
+
+# Environment files
+.env
+.env.local
+.env.*.local
+config.php
+
+# IDE files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Database
+*.sqlite
+*.sqlite3
+*.db
+
+# Temporary files
+*.swp
+*.swo
+*~
+
+# Uploaded files
+/uploads
+/public/uploads
+/storage/uploads
+
+# Cache
+.cache/
+.temp/
+.tmp/
+/dist
+
+# Test coverage
+/coverage
+
+# Build files
+/build
+/dist
+/out
+
+# Local development files
+*.local
+local.*
+
+# PHP specific
+/vendor/
+composer.lock
+.phpunit.result.cache
+
+# Python specific
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Backend config files with sensitive data
+/backend/config/*.php
+!/backend/config/config.example.php
+
+# Frontend build artifacts
+/frontend/dist/
+/frontend/build/
+/frontend/.cache/
+
+# System Files
+.directory
+.fuse_hidden*
+.Trash-*
+.nfs*
