@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Smart Restaurant System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gray-50 font-[Poppins]">
+    <div class="min-h-screen flex items-center justify-center">
+        <div class="bg-white p-8 rounded-lg shadow-lg max-w-2xl w-full mx-4">
+            <div class="text-center mb-8">
+                <i class="fas fa-utensils text-4xl text-orange-500 mb-4"></i>
+                <h1 class="text-3xl font-bold text-gray-900 mb-2">Smart Restaurant System</h1>
+                <p class="text-gray-600">Download the complete system files</p>
+            </div>
+
+            <div class="space-y-6">
+                <!-- Download Section -->
+                <div class="text-center">
+                    <a href="download.php" 
+                        class="inline-flex items-center px-6 py-3 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition duration-300">
+                        <i class="fas fa-download mr-2"></i>
+                        Download Project Files
+                    </a>
+                    <p class="text-sm text-gray-500 mt-2">Downloads all necessary files in ZIP format</p>
+                </div>
+
+                <!-- Installation Steps -->
+                <div class="border-t pt-6">
+                    <h2 class="text-xl font-semibold mb-4">Installation Steps</h2>
+                    <ol class="list-decimal list-inside space-y-3 text-gray-700">
+                        <li>Extract the downloaded ZIP file to your XAMPP htdocs directory:
+                            <div class="bg-gray-50 p-2 mt-1 rounded text-sm font-mono">
+                                C:\xampp\htdocs\smart-restaurant
+                            </div>
+                        </li>
+                        <li>Start XAMPP:
+                            <ul class="list-disc list-inside ml-4 mt-1 text-sm">
+                                <li>Start Apache</li>
+                                <li>Start MySQL</li>
+                            </ul>
+                        </li>
+                        <li>Set up the database:
+                            <ul class="list-disc list-inside ml-4 mt-1 text-sm">
+                                <li>Open phpMyAdmin: http://localhost/phpmyadmin</li>
+                                <li>Create new database: smart_restaurant</li>
+                                <li>Import backend/db/db_schema.sql</li>
+                            </ul>
+                        </li>
+                        <li>Configure database connection:
+                            <div class="bg-gray-50 p-2 mt-1 rounded text-sm font-mono">
+                                Edit backend/config/config.php:
+                                <pre class="mt-2">
+define('DB_HOST', 'localhost');
+define('DB_USER', 'root');  // default XAMPP username
+define('DB_PASS', '');      // default XAMPP password
+define('DB_NAME', 'smart_restaurant');</pre>
+                            </div>
+                        </li>
+                        <li>Access the system:
+                            <ul class="list-disc list-inside ml-4 mt-1 text-sm">
+                                <li>Main Website: http://localhost/smart-restaurant</li>
+                                <li>Admin Panel: http://localhost/smart-restaurant/pages/admin/dashboard.html</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+
+                <!-- Admin Credentials -->
+                <div class="border-t pt-6">
+                    <h2 class="text-xl font-semibold mb-4">Admin Login</h2>
+                    <div class="bg-gray-50 p-4 rounded">
+                        <p class="mb-2"><strong>Email:</strong> ishehryar377@gmail.com</p>
+                        <p><strong>Password:</strong> admin123</p>
+                    </div>
+                </div>
+
+                <!-- Requirements -->
+                <div class="border-t pt-6">
+                    <h2 class="text-xl font-semibold mb-4">System Requirements</h2>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li>XAMPP (includes Apache, PHP, MySQL)</li>
+                        <li>PHP 7.4 or higher</li>
+                        <li>MySQL 5.7 or higher</li>
+                        <li>Web Browser (Chrome, Firefox, Safari)</li>
+                    </ul>
+                </div>
+
+                <!-- Troubleshooting -->
+                <div class="border-t pt-6">
+                    <h2 class="text-xl font-semibold mb-4">Troubleshooting</h2>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li>If you get a database connection error:
+                            <ul class="list-disc list-inside ml-4 mt-1 text-sm">
+                                <li>Verify MySQL is running in XAMPP</li>
+                                <li>Check database credentials in config.php</li>
+                                <li>Ensure database 'smart_restaurant' exists</li>
+                            </ul>
+                        </li>
+                        <li>If pages don't load properly:
+                            <ul class="list-disc list-inside ml-4 mt-1 text-sm">
+                                <li>Verify Apache is running in XAMPP</li>
+                                <li>Check file permissions</li>
+                                <li>Clear browser cache</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
